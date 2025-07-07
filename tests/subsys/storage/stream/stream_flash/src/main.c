@@ -291,16 +291,31 @@ ZTEST(lib_stream_flash, test_stream_flash_buf_size_greater_than_page_size)
 
 static int bad_read(const struct device *dev, off_t off, void *data, size_t len)
 {
+	ARG_UNUSED(dev);
+	ARG_UNUSED(off);
+	ARG_UNUSED(data);
+	ARG_UNUSED(len);
+
 	return -EINVAL;
 }
 
 static int fake_write(const struct device *dev, off_t off, const void *data, size_t len)
 {
+	ARG_UNUSED(dev);
+	ARG_UNUSED(off);
+	ARG_UNUSED(data);
+	ARG_UNUSED(len);
+
 	return 0;
 }
 
 static int bad_write(const struct device *dev, off_t off, const void *data, size_t len)
 {
+	ARG_UNUSED(dev);
+	ARG_UNUSED(off);
+	ARG_UNUSED(data);
+	ARG_UNUSED(len);
+
 	return -EINVAL;
 }
 
