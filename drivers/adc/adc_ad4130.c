@@ -805,7 +805,7 @@ static int adc_ad4130_wait_for_conv_ready(const struct device *dev)
 {
 	bool ready = false;
 	uint32_t reg_val;
-	int ret = 0;
+	int ret;
 
 	while (!ready) {
 
